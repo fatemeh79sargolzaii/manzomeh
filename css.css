@@ -1,0 +1,46 @@
+body{
+    background: url(https://www.millkeyway.com/wp-content/uploads/2017/09/galaxy-img.jpg) no-repeat ;
+    background-size: cover;
+
+}
+.sun-planet{
+    width: 150px;
+    height: 150px;
+    margin: 200px auto;
+    position: relative;
+    padding: 40px;
+  
+}
+
+.sun{
+    width: 150px;
+    height: 150px;
+    background:radial-gradient(at left,#f7f312,#fcf15a,#fde55e,#ffcf67,#faaf3e);
+    border-radius: 50%;
+    border: 1px solid;
+    border-color: rgb(253, 249, 24);
+ 
+ 
+}
+
+.planet{
+    width: 30px;
+    height: 30px ;
+    background-image:url(https://jalebz.ir/wp-content/uploads/1598103183_208_%DA%AF%D8%A7%D9%84%D8%B1%DB%8C-%D8%B9%DA%A9%D8%B3-%DA%A9%D8%B1%D9%87-%D8%B2%D9%85%DB%8C%D9%86%D8%9B-%D8%B9%DA%A9%D8%B3-%D9%87%D8%A7%DB%8C-%D8%B4%DA%AF%D9%81%D8%AA-%D8%A7%D9%86%DA%AF%DB%8C%D8%B2-%D8%A7%D8%B2-%DA%A9%D8%B1%D9%87.jpg);
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 0px ;
+    box-shadow: 8px 8px 5px 8px #3b3838cc;
+   animation: ro 5s infinite;
+}
+@keyframes ro{
+    50%{
+        left: calc( 100% - 40px );
+        top: calc( 100% - 40px );
+    }
+    100%{
+        z-index: -1;
+    }
+}
